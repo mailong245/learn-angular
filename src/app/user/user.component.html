@@ -1,0 +1,6 @@
+<input type="text" class="form-control" (input)="checkStatus()" [(ngModel)]="userName">
+<!-- <button class="btn btn-primary" (click)="showUserName()" [disabled]="status">Submit</button> -->
+<button class="btn btn-primary" (click)="showUserName()" [disabled]="userName == null || userName == ''">Submit</button>
+
+<p><b>Username: </b> <i>{{ userNameOutput }}</i></p>
+<p><b>Username 2-way-binding:</b> {{ userName }}</p>
